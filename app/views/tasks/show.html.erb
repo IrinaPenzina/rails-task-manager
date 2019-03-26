@@ -1,0 +1,9 @@
+<h1>Your task</h1>
+
+<h2> <%= @task.title %></h2>
+<p><%= @task.details %></p>
+
+<%= link_to 'Edit the task', edit_task_path(@task.id), class: 'btn' %>
+
+<%= link_to 'Back to all tasks', tasks_path, class: 'btn' %>
+
